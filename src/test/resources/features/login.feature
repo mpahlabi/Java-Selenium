@@ -22,15 +22,15 @@ Feature: Login
 
 
 
-  #Scenario Outline: Signup with multiple users data
-    #And I go to reg page
-    #When I complete registration with Fname <Fname> and Lname as <Lname>
-    #Then I see my profile as <ExpResult>
-#
-    #Examples: 
-      #| Fname | Lname      | ExpResult     |
-      #| "MR"  | "James001" | "MR James001" |
-      #| "MR"  | "James002" | "MR James002" |
+  Scenario Outline: Signup with multiple users data
+    And I go to reg page
+    When I complete registration with Fname <Fname> and Lname as <Lname>
+    Then I see my profile as <ExpResult>
+
+    Examples: 
+      | Fname | Lname      | ExpResult     |
+      | "MR"  | "James001" | "MR James001" |
+      | "MR"  | "James002" | "MR James002" |
 #
   #Scenario: valid registration
     #And I go to reg page
